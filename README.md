@@ -25,8 +25,7 @@ Nov 26 04:06:52 ip-172-31-33-104 dockerd[3424]: time="2025-11-26T04:06:52.884412
 Nov 26 04:06:53 ip-172-31-33-104 dockerd[3424]: time="2025-11-26T04:06:53.427643658Z" level=info msg="sbJoin: gwep4 ''->'6f1>
 Nov 26 04:06:53 ip-172-31-33-104 dockerd[3424]: time="2025-11-26T04:06:53.733903758Z" level=warning msg="forcibly turning on>
 Nov 26 04:10:41 ip-172-31-33-104 dockerd[3424]: time="2025-11-26T04:10:41.189613448Z" level=info msg="sbJoin: gwep4 ''->'f5f>
-lines 1-24/24 (END)
-ubuntu@ip-172-31-33-104:~/custom-nginx$ dockerfile 
+
 
 
 *********************************************************************************************************************************************
@@ -34,7 +33,7 @@ ubuntu@ip-172-31-33-104:~/custom-nginx$ dockerfile
 ubuntu@ip-172-31-33-104:~/custom-nginx$ sudo docker ps
 CONTAINER ID   IMAGE                       COMMAND                  CREATED          STATUS          PORTS                                 NAMES
 61549f8fa3bc   manikant/custom-nginx:1.0   "/docker-entrypoint.…"   26 minutes ago   Up 26 minutes   0.0.0.0:80->80/tcp, [::]:80->80/tcp   custom-nginx-web-1
-ubuntu@ip-172-31-33-104:~/custom-nginx$ 
+
 
 
 *******************************************************************************************************************************************************
@@ -42,14 +41,14 @@ ubuntu@ip-172-31-33-104:~/custom-nginx$
 ubuntu@ip-172-31-33-104:~/custom-nginx$ sudo docker compose ps
 NAME                 IMAGE                       COMMAND                  SERVICE   CREATED          STATUS          PORTS
 custom-nginx-web-1   manikant/custom-nginx:1.0   "/docker-entrypoint.…"   web       28 minutes ago   Up 28 minutes   0.0.0.0:80->80/tcp, [::]:80->80/tcp
-ubuntu@ip-172-31-33-104:~/custom-nginx$ 
+ 
 
 ***************************************************************************************************************************************************************
 
 ubuntu@ip-172-31-33-104:~/custom-nginx$ sudo docker images | grep custom-nginx
 WARNING: This output is designed for human readability. For machine-readable output, please use --format.
 manikant/custom-nginx:1.0   9ccbd2eda877       79.9MB         22.6MB   U    
-ubuntu@ip-172-31-33-104:~/custom-nginx$ 
+
 
 
 ********************************************************************************************************************************************************************
@@ -57,7 +56,7 @@ ubuntu@ip-172-31-33-104:~/custom-nginx$
 ubuntu@ip-172-31-33-104:~/custom-nginx$ sudo docker compose ps
 NAME                 IMAGE                       COMMAND                  SERVICE   CREATED              STATUS              PORTS
 custom-nginx-web-1   manikant/custom-nginx:1.0   "/docker-entrypoint.…"   web       About a minute ago   Up About a minute   0.0.0.0:80->80/tcp, [::]:80->80/tcp
-ubuntu@ip-172-31-33-104:~/custom-nginx$ 
+
 
 **************************************************************************************************************************************************************
 
